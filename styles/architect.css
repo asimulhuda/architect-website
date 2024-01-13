@@ -1,0 +1,179 @@
+/* Shared styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 1.25rem 1.563rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.25rem;
+}
+
+.text-light-gray {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Header Styles Nav */
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 3.125rem 15rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #131313;
+    font-size: 2.813rem;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 1.875rem;
+    font-weight: 500;
+    font-size: 1.125;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* Header banner Styles */
+
+.banner-content {
+    text-align: center;
+    margin: 110px auto 50px auto;
+    max-width: 50rem;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+.banner img {
+    width: 100%;
+}
+
+/* main sections styles */
+
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+
+/* Features sections styles */
+
+
+.features {
+    padding-right: 60px;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.features-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.features-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.features-content-title {
+    color: #131313;
+    font-size: 2.813rem;
+    font-weight: 700;
+}
+
+.features-content-title-gray {
+    color: #727272;
+    font-weight: 500;
+}
+
+.features-content-title-orange {
+    color: #FF900E;
+}
+
+
+
+
+
+/* Responsive Media quais */
+
+/* Mobile devices */
+
+@media screen and (max-width: 576px) {
+
+    header {
+        padding: 1.25rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .features-img{
+        grid-template-columns: 1fr;
+    }
+
+    .features-content{
+        padding: 0;
+    }
+    
+}
+
+
+/* Tablet devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+    header {
+        padding: 1.25rem;
+    }
+
+    nav  {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .features-content{
+        padding: 0;
+    }
+}
